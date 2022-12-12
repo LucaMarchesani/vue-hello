@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
     <!-- VUE.JS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- CUSTOM STYLE CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div id="app">
         <main>
@@ -24,10 +28,20 @@
             </div>
             <p>
                 {{ text }}
-            </p>      
+            </p>
+            <div class="d-flex">
+                <button @click="counter--">
+                    {{ counterDecr }}
+                </button>
+                <span class="effect"> {{ counter }} </span>
+                <button @click="counter++" >
+                    {{ counterIncr }}
+                </button> 
+            </div>
         </main>
     </div>
-    
+
     <script src="./main.js"></script>
 </body>
+
 </html>
