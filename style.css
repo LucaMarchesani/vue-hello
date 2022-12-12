@@ -1,0 +1,26 @@
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: rgb(3, 121, 121);
+}
+
+img{
+    width: 100px;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: -1.2rem;
+    font-size: 3rem;
+    color: #41b883;
+}
+
+P{
+    padding-top: 2rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
